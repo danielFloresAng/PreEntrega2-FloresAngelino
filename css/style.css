@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Red+Hat+Display:wght@400;600&display=swap');
+.bd {
+    border: solid !important;
+}
+:root {
+/* palette */
+--secundary:#876B91;
+--contrast:#EC8C2B;
+--main:#49516D;
+--white:#E2EBF3;
+--blac:#111003;
+--contrastTwo:#BFDB95;
+/* Fonts */
+--poiret: 'Poiret One', cursive;
+--quicksand:'Quicksand', sans-serif;
+--sacramento: 'Sacramento', cursive; 
+--dancing: 'Dancing Script', cursive;
+--redhat: 'Red Hat Display', sans-serif;
+}
+/* Generales */
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: var(--quicksand);  
+    background: linear-gradient(to bottom, #E2EBF3, #876b9177 80%);
+}
+/* Links, párrafos y headings*/
+a {
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Poiret One', cursive;
+    height: 6rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--main);
+    text-align: center;
+}
+.cotizaciones-button a:hover, .nav-list li a:hover{
+    color: var(--white);
+}
+.cotizaciones-button {
+    background-color: #787878be;
+    display: inline-block;
+    width: 280px;
+    height: 30px;
+    padding-top: .3rem;
+    position: fixed;
+    border-radius: 20px;
+    text-align: center;
+    bottom: 30%;
+    right: 10%;
+}
+.cotizaciones-button a {
+    color: var(--contrastTwo);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+}
+.album-fotos .link-index-fotos {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--secundary);
+}
+.album-fotos .link-index-fotos a {
+    text-decoration: underline;
+    color: var(--secundary);
+}
+
+/* Barra de navegacion */
+
+.navbar {
+    padding-bottom: 0;
+    background-color: var(--white);
+    margin-bottom: 0;
+}
+.navbar-brand {
+    color: var(--main) !important;
+}
+.navbar-brand i {
+    margin: .7rem;
+    font-size: 3rem;
+}
+.navbar-brand p {
+    font-family: var(--sacramento);
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-left: 3rem;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
+.nav-item {
+    margin: 0 1rem;
+}
+.nav-link {
+    width: 14rem;
+    background-color: var(--main);
+    color: var(--contrastTwo);
+    font-size: 2.2rem;
+    font-weight: 500;
+    border-radius:  45px  45px 0 0;
+    text-align: center;
+    padding-bottom:0;
+}
+.nav-link:hover {
+    color: var(--white);
+    background-color: var(--secundary);
+    font-size: 2.25rem;
+}
+
+/* Media queries navbar */
+@media only screen and (max-width: 575px) {
+    .nav-fluid {
+        display: flex;
+        align-items: end;
+    }
+    .navbar-nav, .nav-item, .nav-link {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navbar-brand {
+        margin: 0;
+        padding: 10px;
+
+    }
+    .navbar-brand i, .navbar-brand p {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .nav-link {
+        border-radius: 0;
+        margin-bottom: 1px !important;
+    }
+    .navbar-toggler{
+        background-color: var(--main);
+        padding: 0;
+    }
+    .navbar-toggler span{
+        width: 4rem;
+        height: 4rem;
+        font-size: 25px;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width: 819px) and (min-width: 576px) {
+    .nav-fluid {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .navbar-brand {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 1rem;
+    }
+    .navbar-collapse, .navbar-nav {
+        width: 100%;
+    }
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item {
+        margin: 0 .5rem;
+    }
+} 
+/* Fin navbar */
+
+/* Footer */
+.div-footer {
+    padding: .2rem 4rem;
+    background-color: var(--main) ;
+}
+.div-footer footer {
+    border-top: solid 1px rgba(255, 255, 255, 0.558) !important;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+footer ul li {
+    margin: 0 3rem;
+}
+.text-muted {
+    margin-top: 1rem;
+    color: var(--white) !important;
+    font-size: 18px;
+}
+
+span .text-muted {
+    text-transform: capitalize;
+}
+/* Mediaqueries footer */
+@media only screen and (max-width: 485px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    a .text-muted {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    }
+    footer ul {
+    padding: .5rem 1rem;
+    width: 180px;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    }
+    footer ul li {
+        margin: 0;
+    }
+}
+/* Termina footer */
+
+/* Header index */
+header {
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/Cupcakes\ m.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-header {
+    text-align: center;
+    color: rgb(212, 212, 212);
+    height: inherit;
+    width: 100%;
+    background-color: #111003b6;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.container-header .titulo {
+    font-family: var(--poiret);
+    font-size: 7rem;
+}
+.container-header .eslogan {
+    font-family: var(--dancing);
+    font-size: 4rem;
+}
+/* Mediaqueries header */
+@media only screen and (max-width: 575px) {
+    .container-header {
+    padding: 3rem;
+    }
+    .container-header .titulo {
+    font-size: 4rem;
+    margin: 0;
+    }
+    .container-header .eslogan {
+    font-size: 2.5rem;
+    margin: 0;
+}
+}
+/* main index */
+.album-fotos .link-index-fotos {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--secundary);
+}
+article p {
+    line-height: normal;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 80%;
+}
+/* Album-imagenes */
+.div-galeria {
+    height: 50rem;
+    max-width: 55%;
+    display: grid;
+    padding: 7px;
+    gap: 1%;
+    grid-template-areas: 
+    "foto1 foto2 foto3 foto3"
+    "foto1 foto4 foto4 foto8"
+    "foto6 foto5 foto7 foto8"
+    ;
+}
+.img-galeria {
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(40%);
+    transition: all 0.6s;
+}
+.img-galeria:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+.item1 {
+    background-image: url(../img/pexels-jess-bailey-designs-913136.jpg);
+    grid-area: foto1;
+}
+.item2 {
+    background-image: url(../img/Cake\ c.jpg);
+    grid-area: foto2;
+}
+.item3 {
+    background-image: url(../img/Cup\ c.jpg);
+    grid-area: foto3;
+}
+.item4 {
+    background-image: url(../img/Cookie\ c.jpg);
+    grid-area: foto4;
+}
+.item5 {
+    background-image: url(../img/pexels-gordon-ky-15505793.jpg);
+    grid-area: foto5;
+}
+.item6 {
+    background-image: url(../img/pexels-shvets-production-7525193.jpg);
+    grid-area: foto6;
+}
+.item7 {
+    background-image: url(../img/pexels-rodrigo-souza-2531546.jpg);
+    grid-area: foto7;
+}
+.item8 {
+    background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+    grid-area: foto8;
+}
+@media (max-width: 700px) {
+    .div-galeria {
+    height: 40rem;
+    max-width: 60%;
+    grid-template-areas: 
+    "foto1 foto1 foto2 foto2"
+    "foto3 foto3 foto4 foto4"
+    "foto5 foto5 foto6 foto6"
+    "foto7 foto7 foto8 foto8"
+    ;
+    }
+}
+
+
+
