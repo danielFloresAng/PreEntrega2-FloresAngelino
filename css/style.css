@@ -32,6 +32,15 @@ body {
     background: linear-gradient(to bottom, #E2EBF3, #876b9177 80%);
 }
 /* Links, párrafos y headings*/
+.heading {
+    font-size: 7rem;
+    font-weight: 700;
+    padding: 0.8rem 0;
+    margin: 10rem 0 1rem 0;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: var(--main);
+}
 a {
     text-decoration: none;
 }
@@ -39,48 +48,19 @@ h2 {
     font-family: 'Poiret One', cursive;
     height: 6rem;
     padding: 0.5rem;
-    font-size: 3rem;
-    margin-top: 3rem;
+    font-size: 4rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--main);
     text-align: center;
 }
-.cotizaciones-button a:hover, .nav-list li a:hover{
-    color: var(--white);
-}
-.cotizaciones-button {
-    background-color: #787878be;
-    display: inline-block;
-    width: 280px;
-    height: 30px;
-    padding-top: .3rem;
-    position: fixed;
-    border-radius: 20px;
-    text-align: center;
-    bottom: 30%;
-    right: 10%;
-}
-.cotizaciones-button a {
-    color: var(--contrastTwo);
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 100%;
-    height: 100%;
-}
-.album-fotos .link-index-fotos {
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 600;
-    color: var(--secundary);
-}
-.album-fotos .link-index-fotos a {
-    text-decoration: underline;
-    color: var(--secundary);
+@media (max-width: 360px) {
+    h2 {
+        font-size: 3rem;
+    }
 }
 
 /* Barra de navegacion */
-
 .navbar {
     padding-bottom: 0;
     background-color: var(--white);
@@ -239,6 +219,7 @@ span .text-muted {
 /* Header index */
 header {
     margin-top: 90px;
+    margin-bottom: 7rem;
     width: 100%;
     height: auto;
     background-image: url(../img/Cupcakes\ m.jpg);
@@ -317,6 +298,16 @@ article p {
     filter: grayscale(0%);
     transform: scale(1.02);
 }
+.album-fotos .link-index-fotos {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--secundary);
+}
+.album-fotos .link-index-fotos a {
+    text-decoration: underline;
+    color: var(--secundary);
+}
 .item1 {
     background-image: url(../img/pexels-jess-bailey-designs-913136.jpg);
     grid-area: foto1;
@@ -349,6 +340,7 @@ article p {
     background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
     grid-area: foto8;
 }
+/* mediaqueries galeria */
 @media (max-width: 700px) {
     .div-galeria {
     height: 40rem;
@@ -362,5 +354,84 @@ article p {
     }
 }
 
+/* Productos */
 
+.products-section ul {
+    list-style: none;
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.productos-image {
+    height: 25rem;
+    width: 25rem;
+    margin: 2rem auto;
+    border: solid #e2ebf3 13px;
+    border-radius: 50%;
+}
+.products-section #cupcakes {
+    background-image: url(../img/pexels-taryn-elliott-4099124.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+.products-section #minicakes {
+    background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+.products-section #pasteles {
+    background-image: url(../img/Cake\ c.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+.products-section #galletas {
+    background-image: url(../img/Cookie\ c.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+.galletas-nota {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 14px;
+}
+/* Boton cotizaciones */
+.cotizaciones-button {
+    margin:0 0 2rem 60% ;
+}
+.cotizaciones-button a {
+    background-color: var(--main);
+    color: var(--contrastTwo);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 5px 9px;
+}
+.cotizaciones-button a:hover{
+    font-size: 12.2px;
+    color: #E2EBF3;
+}
+
+@media (min-width: 770px) {
+    .cotizaciones-button {
+        display: inline-block;
+        position: fixed;
+        bottom: 20%;
+        right: 5%;
+    }
+    }
+
+@media only screen and (min-width: 770px) and (max-width: 935px) {
+    .texto-cotizaciones {
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 1110px) {
+    .cotizaciones-button {
+        right: 3%;
+    }
+}
 
