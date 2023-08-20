@@ -46,7 +46,7 @@ a {
 }
 h2 {
     font-family: 'Poiret One', cursive;
-    height: 6rem;
+    height: 5rem;
     padding: 0.5rem;
     font-size: 4rem;
     margin-top: 1.5rem;
@@ -54,11 +54,20 @@ h2 {
     color: var(--main);
     text-align: center;
 }
+/* mediaqueries Links, párrafos y headings */
 @media (max-width: 360px) {
     h2 {
-        font-size: 3rem;
+        font-size: 2.6rem;
+        margin-top: 1rem;
+        margin-bottom: .8rem;
+    }
+    .heading {
+        font-size: 4rem;
+        margin-top: 7rem;
+        margin-bottom: .2rem;
     }
 }
+
 
 /* Barra de navegacion */
 .navbar {
@@ -355,7 +364,6 @@ article p {
 }
 
 /* Productos */
-
 .products-section ul {
     list-style: none;
     margin-bottom: 6rem;
@@ -396,6 +404,22 @@ article p {
     font-style: italic;
     margin-top: 14px;
 }
+/* mediaqueries Productos */
+@media (max-width: 350px) {
+    .products-section ul {
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+    }
+    .productos-image {
+        height: 16rem;
+        width: 16rem;
+        border: solid #e2ebf3 8px;
+        margin-top: 1rem;
+    }
+    .galletas-nota {
+        font-size: 1rem;
+    }
+}
 /* Boton cotizaciones */
 .cotizaciones-button {
     margin:0 0 2rem 60% ;
@@ -414,12 +438,14 @@ article p {
     color: #E2EBF3;
 }
 
+/* mediaqueries Boton cotizaciones */
 @media (min-width: 770px) {
     .cotizaciones-button {
         display: inline-block;
         position: fixed;
         bottom: 20%;
         right: 5%;
+        padding: .2rem;
     }
     }
 
