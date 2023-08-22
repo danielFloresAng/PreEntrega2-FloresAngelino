@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Red+Hat+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;575;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Red+Hat+Display:wght@400;575&display=swap');
 .bd {
     border: solid !important;
 }
@@ -55,7 +55,7 @@ h2 {
     text-align: center;
 }
 /* mediaqueries Links, párrafos y headings */
-@media (max-width: 360px) {
+@media (max-width: 575px) {
     h2 {
         font-size: 2.6rem;
         margin-top: 1rem;
@@ -63,7 +63,7 @@ h2 {
     }
     .heading {
         font-size: 4rem;
-        margin-top: 7rem;
+        margin-top: 10rem;
         margin-bottom: .2rem;
     }
 }
@@ -151,7 +151,7 @@ h2 {
         margin-top: 70px;
     }
 }
-@media only screen and (max-width: 819px) and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 819px){
     .nav-fluid {
         flex-direction: column;
         justify-content: center;
@@ -272,7 +272,7 @@ header {
     font-size: 1.5rem;
     text-align: center;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 575;
     color: var(--secundary);
 }
 article p {
@@ -310,7 +310,7 @@ article p {
 .album-fotos .link-index-fotos {
     font-size: 18px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 575;
     color: var(--secundary);
 }
 .album-fotos .link-index-fotos a {
@@ -362,7 +362,6 @@ article p {
     ;
     }
 }
-
 /* Productos */
 .products-section ul {
     list-style: none;
@@ -405,7 +404,8 @@ article p {
     margin-top: 14px;
 }
 /* mediaqueries Productos */
-@media (max-width: 350px) {
+/* copiar código  */
+@media only screen and (max-width: 575px) {
     .products-section ul {
         margin-bottom: 3rem;
         font-size: 1.2rem;
@@ -420,21 +420,39 @@ article p {
         font-size: 1rem;
     }
 }
+
+@media only screen and (min-width: 576px) and (max-width: 995px) {
+    .products-section ul {
+        margin-bottom: 4.5rem;
+        font-size: 1.4rem;
+    }
+    .productos-image {
+        height: 20rem;
+        width: 20rem;
+        margin: 1.4rem auto;
+        border: solid #e2ebf3 10px;
+        
+    } 
+    .galletas-nota {
+        font-size: 1.2rem;
+    }
+}
+
 /* Boton cotizaciones */
 .cotizaciones-button {
-    margin:0 0 2rem 60% ;
+    margin:0 0 2rem 60%;
 }
 .cotizaciones-button a {
     background-color: var(--main);
     color: var(--contrastTwo);
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 500;
     text-transform: uppercase;
     border-radius: 12px;
-    padding: 5px 9px;
+    padding: 3px 8px;
 }
 .cotizaciones-button a:hover{
-    font-size: 12.2px;
+    font-size: 10.2px;
     color: #E2EBF3;
 }
 
@@ -443,21 +461,16 @@ article p {
     .cotizaciones-button {
         display: inline-block;
         position: fixed;
-        bottom: 20%;
-        right: 5%;
-        padding: .2rem;
+        bottom: 30%;
+        right: 1%;
     }
-    }
-
-@media only screen and (min-width: 770px) and (max-width: 935px) {
     .texto-cotizaciones {
         display: block;
     }
-
-}
-@media only screen and (max-width: 1110px) {
+    }
+/* @media only screen and (max-width: 1110px) {
     .cotizaciones-button {
         right: 3%;
     }
-}
+} */
 
