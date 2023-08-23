@@ -468,9 +468,75 @@ article p {
         display: block;
     }
     }
-/* @media only screen and (max-width: 1110px) {
-    .cotizaciones-button {
-        right: 3%;
-    }
-} */
 
+/* Servicios */
+.fotos-servicios {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 60rem;
+    display: grid;
+    grid-template-areas: 
+    "img-diseno-1 img-diseno-2"
+    "img-diseno-3 img-diseno-4"
+    ;
+    gap: 1%;
+}
+.foto-diseño {
+    border: solid .5px #49516D;
+    height:21rem;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+#img-diseno-1 {
+    background-image: url(../img/Cookies\ c.jpg);
+    grid-area: img-diseno-1;
+}
+#img-diseno-2 {
+    background-image: url(../img/pexels-jess-bailey-designs-853004.jpg);
+    grid-area: img-diseno-2;
+}
+#img-diseno-3 {
+    background-image: url(../img/pexels-merlin-lightpainting-11309253.jpg);
+    grid-area: img-diseno-3;
+}
+#img-diseno-4 {
+    background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+    grid-area: img-diseno-4;
+}
+.fotos-eventos {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 60rem;
+    display: grid;
+    grid-template-areas: 
+    "img-even-1 img-even-1"
+    "img-even-2 img-even-3"
+    ;
+    gap: 1%;
+}
+#img-even-1 {
+    background-image: url(../img/pexels-ibrahim-boran-903400.jpg);
+    grid-area: img-even-1;
+}
+#img-even-2 {
+    background-image: url(../img/pexels-deeana-arts-2418652.jpg);
+    grid-area: img-even-2;
+}
+#img-even-3 {
+    background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+    grid-area: img-even-3;
+}
+/* Galeria */
+/* actualizar imágenes */
+/* Contacto */
+.main-contacto {
+    margin: 2rem auto;
+    width: 70%;
+}
+.contacto-section, .mapa {
+    margin: 1rem auto;
+}
+.contacto-section p a{
+    color: #876B91;
+}
